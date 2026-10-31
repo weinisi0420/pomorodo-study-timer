@@ -1,3 +1,5 @@
+direct link: https://study-app-pomo.ai.studio/
+
 🍅 Pomodoro Study Timer
 
 A modern, distraction-free Pomodoro study timer web application designed to maximize productivity, maintain intense focus, and balance study sessions with refreshing breaks.
@@ -35,3 +37,14 @@ HTML5 - Structure and layout
 CSS3 / Tailwind CSS - Styling and responsive design
 
 JavaScript (ES6+) - Core application logic and timer state management
+
+💡 Usage Guide
+
+Click the Start button to begin your countdown.
+
+Need to step away? Hit Pause to freeze the timer without losing your progress.
+
+Click Reset to return the timer to its initial duration state.
+
+Switch between different modes (Study Session, Short Break, Long Break) depending on your current schedule.
+
