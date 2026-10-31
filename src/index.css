@@ -1,0 +1,103 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-silkscreen {
+    font-family: 'Silkscreen', monospace;
+  }
+  .font-retro {
+    font-family: 'VT323', monospace;
+  }
+  .font-mono-code {
+    font-family: 'Space Mono', monospace;
+  }
+  
+  /* Crisp pixel box shadows */
+  .pixel-box {
+    border: 3px solid #2B2D42;
+    box-shadow: 4px 4px 0px 0px #2B2D42;
+  }
+  .dark .pixel-box {
+    border: 3px solid #1E202E;
+    box-shadow: 4px 4px 0px 0px #0F1018;
+  }
+
+  .pixel-box-sm {
+    border: 2px solid #2B2D42;
+    box-shadow: 2px 2px 0px 0px #2B2D42;
+  }
+  .dark .pixel-box-sm {
+    border: 2px solid #1E202E;
+    box-shadow: 2px 2px 0px 0px #0F1018;
+  }
+
+  .pixel-btn {
+    border: 2px solid #2B2D42;
+    box-shadow: 3px 3px 0px 0px #2B2D42;
+    transition: transform 0.05s ease, box-shadow 0.05s ease;
+  }
+  .pixel-btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px 0px #2B2D42;
+  }
+  .pixel-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px 0px #2B2D42;
+  }
+
+  .dark .pixel-btn {
+    border: 2px solid #1A1C29;
+    box-shadow: 3px 3px 0px 0px #0B0D14;
+  }
+  .dark .pixel-btn:hover {
+    box-shadow: 4px 4px 0px 0px #0B0D14;
+  }
+  .dark .pixel-btn:active {
+    box-shadow: 1px 1px 0px 0px #0B0D14;
+  }
+
+  /* Pixel rendering */
+  .pixelated {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+}
+
+@keyframes tail-wag-twice {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(-20deg); }
+  30% { transform: rotate(18deg); }
+  45% { transform: rotate(-12deg); }
+  50% { transform: rotate(0deg); }
+  65% { transform: rotate(-20deg); }
+  80% { transform: rotate(18deg); }
+  95% { transform: rotate(-12deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-tail-wag-twice {
+  animation: tail-wag-twice 0.85s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Custom scrollbar for retro feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #E8F1FC;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #191B26;
+}
+::-webkit-scrollbar-thumb {
+  background: #B6D5F5;
+  border: 1px solid #2B2D42;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #39405F;
+  border: 1px solid #1A1C29;
+}

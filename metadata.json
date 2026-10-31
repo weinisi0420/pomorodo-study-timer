@@ -1,0 +1,8 @@
+{
+  "name": "Pixel Pomo - Cozy Study Sanctuary",
+  "description": "A retro pixel-art Pomodoro study timer with ambient sound mixer (rain, piano, cafe), night lamp mode, custom study/break intervals, and interactive desk diorama.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
