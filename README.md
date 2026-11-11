@@ -1,4 +1,4 @@
-direct link: https://study-app-pomo.ai.studio/
+direct link: https://pomorodo-study-timer.vercel.app/
 
 🍅 Pomodoro Study Timer
 
